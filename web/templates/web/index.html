@@ -7,13 +7,52 @@
     width: 70%;
     margin: auto;
 }
+
+.recipe-content{
+  display: none;
+}
+
+.stuff-content{
+  display: none;
+}
 </style>
 <div class="container">
   <div class="row">
-    <button type="button" name="button" class="btn btn-lg btn-default">레시피 검색</button>
-    <button type="button" name="button" class="btn btn-lg btn-default">재료 검색</button>
+    <button id="recipe" type="button" name="button" class="btn btn-lg btn-default">레시피 검색</button>
+    <button id="stuff" type="button" name="button" class="btn btn-lg btn-default">재료 검색</button>
   </div>
+  <div class="row">
+    <div class="recipe-content">
+      <input type="text" name="recipe-text" class="">
+      <button type="button" name="button" class="btn btn-lg btn-default recipt-bt">레시피 검색</button>
+    </div>
+
+    <div class="stuff-content">
+      <div class="checkbox">
+        <input id="checkbox1" type="checkbox">
+        <label for="checkbox1">
+          고기
+        </label>
+      </div>
+      <div class="checkbox checkbox-primary">
+        <input id="checkbox2" type="checkbox" checked="">
+        <label for="checkbox2">
+          생선
+        </label>
+      </div>
+      <div class="checkbox checkbox-success">
+        <input id="checkbox3" type="checkbox">
+        <label for="checkbox3">
+          채소
+        </label>
+      </div>
+      <button type="button" name="button" class="btn btn-lg btn-default stuff-bt">재료 검색</button>
+    </div>
+
+  </div>
+
 </div>
+
 
 <div class="page-header">
   <h1>오늘의 추천 매뉴</h1>
@@ -88,5 +127,20 @@
     </a>
   </div>
 </div>
+<script type="text/javascript">
+    var recipe = document.getElementById("recipe");
+    var stuff = document.getElementById("stuff");
+
+    recipe.addEventListener("click",function(){
+      var recipe_content = document.querySelector(".recipe-content");
+
+    });
+
+    stuff.addEventListener("click",function(){
+
+    })
+
+
+</script>
 
 {% endblock %}
