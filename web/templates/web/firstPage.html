@@ -6,13 +6,41 @@
     <title>Nayo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style media="screen">
+      .cover-container{
+        width: 960px;
+        margin: 0 auto;
+        height: 100vh;
+        background-color: pink;
+      }
+
+      .center{
+        display: flex;
+        justify-content: center;
+      }
+
+      .screen-center{
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+      }
+    </style>
   </head>
   <body>
     <div class="site-wrapper">
       <div class="cover-container">
-        <img src="{% static 'img/nayoLogo.png' %}" alt="nayo logo">
-        <h1>나만의 요리사</h1>
-        <a href="{% url 'index'%}" class="btn btn-lg btn-default">입장하기</a>
+        <div class="center">
+          <img src="{% static 'img/nayoLogo.png' %}" alt="nayo logo">
+        </div>
+
+        <div class="screen-center">
+          <h1>나만의 요리사</h1>
+          <a href="{% url 'index'%}" class="btn btn-lg btn-default">입장하기</a>
+        </div>
+
+
       </div>
     </div>
   </body>
