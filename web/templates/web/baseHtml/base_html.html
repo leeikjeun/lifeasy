@@ -5,23 +5,51 @@
     <meta charset="utf-8">
     <title>Nayo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="{% static 'css/baseHtml/test.css' %}">
-
+    <link rel="stylesheet" href="{% static 'css/baseHtml/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/baseHtml/base.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <heade>
-      <img src="{% static 'img/nayoLogo.png' %}" alt="nayo logo">
-      <a href="{% url 'index'%}" class="btn btn-lg btn-default">고객선터</a>
+    <header class="base-size">
+      <h1 class="main-logo">NAYO</h1>
+      <p class="sub-logo">나만의 요리사</p>
     </header>
+    <div class="base-size menu-item">
+      <ul>
+        <li>
+          <h2>HOME</h2>
+          <p>홈</p>
+        </li>
+        <li>
+          <h2>RECIPE</h2>
+          <p>레시피</p>
+        </li>
+        <li>
+          <h2>INGREDIENT</h2>
+          <p>재료 검색</p>
+        </li>
+        <li>
+          <h2>ABOUT</h2>
+          <p>소개</p>
+        </li>
+      </ul>
+
+    </div>
+
+
     {% block content %}
 
     {% endblock %}
-     <footer class="footer">
-        <h2>maker : Lee Ik Jeon, kang joo 희, bark yun gi, kim do gun</h2>
-        <p>@2017 Copyright / +82 000-000-000 / address</p>
+     <footer class="footer base-size">
+        <ul>
+          <li>회사소개</li>
+          <li>서비스약관</li>
+          <li>광고 및 제휴문의</li>
+          <li>고객센터</li>
+        </ul>
+        <p>ⓒNAYO Corp.</p>
      </footer>
   </body>
 </html>
