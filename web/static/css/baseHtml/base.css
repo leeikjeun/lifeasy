@@ -3,8 +3,7 @@
 }
 
 .base-size{
-    width: 978px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 .main-logo{
@@ -12,4 +11,16 @@
   font-weight: bold;
   font-family: serif;
   color: rgb(66, 66, 66);
+}
+
+.sub-logo{
+  margin: 0 auto;
+  font-size: 11px;
+  font-family: Comic Sans MS;
+  color: rgb(176, 177, 181);
+}
+
+.base-size menu-item{
+  float: left;
+  width: 160px;
 }
