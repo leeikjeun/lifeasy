@@ -2,9 +2,11 @@
  box-sizing: border-box;
 }
 
-.base-size{
-    margin:0 auto;
-}
+.base-size {
+  width: 143px;
+  text-align: center;
+  margin: 0 auto;
+  }
 
 .main-logo{
   font-size: 45px;
@@ -21,6 +23,23 @@
 }
 
 .base-size menu-item{
+  display: inline;
   float: left;
-  width: 160px;
+  text-align: left;
+  width: 130px;
+}
+
+.menu-item {
+  font-size: 16px;
+  color: rgb(159, 160, 164);
+}
+
+.sub-item {
+  font-size: 11px;
+  color: rgb(208, 208, 210);
+}
+
+.footer base-size {
+  display: inline;
+  width: 746px;
 }
