@@ -3,7 +3,7 @@
 }
 
 .base-size {
-  width: 143px;
+  width: 978px;
   text-align: center;
   margin: 0 auto;
   }
@@ -23,13 +23,31 @@
 }
 
 .base-size menu-item{
-  display: inline;
-  float: left;
+
   text-align: left;
   width: 130px;
 }
 
-.menu-item {
+.menu-item ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item ul li{
+  width: 25%;
+  transition: all 0.2s;
+}
+
+.menu-item ul li:hover{
+  text-decoration: none;
+  background-color: #e1e1e1;
+}
+
+.menu-item ul li a:hover{
+  text-decoration: none;
+}
+
+.menu-title {
   font-size: 16px;
   color: rgb(159, 160, 164);
 }
