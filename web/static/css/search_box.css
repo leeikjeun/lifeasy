@@ -6,10 +6,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 7px;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .search-box {
-  padding:72px 210px 150px;
+  padding:72px 210px 150px 170px;
 }
 
 .search {
@@ -18,10 +20,15 @@
   height: 43px;
 }
 
+.find {
+  margin-left: 10px;
+  font-size: 28px;
+}
+
 .img-list {
   display: flex;
   justify-content : space-around;
-  margin-bottom:
+  margin-bottom: 50px;
 }
 
 .img-box img{
