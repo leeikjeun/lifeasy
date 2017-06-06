@@ -1,16 +1,14 @@
-
-{% endblock %}{% extends 'web/baseHtml/base_html.html' %}
+{% extends 'web/baseHtml/base_html.html' %}
 {% load staticfiles %}
 {% block content %}
-  <link rel="stylesheet" href="{% static 'css/search_box.css' %}">
+  <link rel="stylesheet" href="{% static 'csgs' %}">
 
   <div class="search-box">
     <form class="" action="" method="get">
         <h3 class="recipe-title">
           레시피 검색
         </h3>
-        <input type="text" name="recipe_key"><span class="glyphicon glyphicon-search"></span>
-        <input type="submit" name="send">
+        <input type="text" name="recipe_key" class="search"><span class="glyphicon glyphicon-search"></span>
     </form>
   </div>
 
