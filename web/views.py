@@ -8,5 +8,8 @@ def mainPage(request):
 def recipePage(request):
     return render(request, 'web/recipe.html',{})
 
+def recipeResultPage(request):
+    return render(request, 'web/recipe_result.html',{})
+
 def stuff(request):
-    return render(request, 'web/stuff.html',{})
+    return render(request, 'web/stuff.html', {})

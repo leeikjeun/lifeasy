@@ -1,25 +1,36 @@
-<!DOCTYPE html>
+{% extends 'web/baseHtml/base_html.html' %}
 {% load staticfiles %}
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <title>Nayo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <a href="#" class="btn btn-lg btn-default"><i class="fa fa-undo" aria-hidden="true"></i></a>
-      <a href="{% url 'index'%}" class="btn btn-lg btn-default">고객센터</a>
-    </header>
-    <div class="">
-  
+{% block content %}
+  <link rel="stylesheet" href="{% static 'css/search_box.css' %}">
+
+  <div class="search-box">
+    <form class="" action="" method="get">
+        <h3 class="recipe-title">
+          레시피 검색
+        </h3>
+        <input type="text" name="recipe_key"><span class="glyphicon glyphicon-search"></span>
+        <input type="submit" name="send">
+    </form>
+  </div>
+
+  <div class="img-list">
+    <div class="img-box">
+      <img src="{% static 'img/sliderImg/testImg1.jpg' %}" alt="">
     </div>
+    <div class="img-box">
+      <img src="{% static 'img/sliderImg/testImg2.jpg' %}" alt="">
+    </div>
+    <div class="img-box">
+      <img src="{% static 'img/sliderImg/testImg3.jpg' %}" alt="">
+    </div>
+    <div class="img-box">
+      <img src="{% static 'img/sliderImg/testImg4.jpg' %}" alt="">
+    </div>
+    <div class="img-box">
+      <img src="{% static 'img/sliderImg/testImg5.jpg' %}" alt="">
+    </div>
+  </div>
 
 
 
-
-  </body>
-</html>
+{% endblock %}
