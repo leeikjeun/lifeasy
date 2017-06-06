@@ -5,11 +5,18 @@
     <meta charset="utf-8">
     <title>NAYO</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/baseHtml/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'css/baseHtml/base.css' %}">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/baseHtml/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/baseHtml/base.css' %}">
+    <style media="screen">
+      .test{
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <header class="base-size">
@@ -17,7 +24,7 @@
       <p class="sub-logo">나만의 요리사</p>
     </header>
     <div class="base-size menu-item">
-      <ul>
+      <ul class="main-menu">
         <li>
           <a href="#">
             <h2 class = "menu-title">HOME</h2>
@@ -43,21 +50,23 @@
           </a>
         </li>
       </ul>
-      <hr class="line">
     </div>
+
+
+    <div class="base-size">
 
 
     {% block content %}
 
     {% endblock %}
+    </div>
      <footer class="footer base-size">
-       <ul>
+       <ul class="foot-menu">
          <li>회사소개</li>
          <li>서비스약관</li>
          <li>광고 및 제휴문의</li>
          <li>고객센터</li>
        </ul>
-       <hr class="line">
         <p>ⓒNAYO Corp.</p>
      </footer>
   </body>
