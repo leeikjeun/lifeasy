@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^footer/service$', views.footerProvision, name='service'),
     url(r'^footer/advertising$', views.advertising, name='advertising'),
     url(r'^footer/faq$', views.faq, name='faq'),
+    url(r'^stuff$', views.stuff, name='stuff'),
 ]
