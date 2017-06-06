@@ -1,0 +1,22 @@
+.recipe-title {
+  background-color: rgb(224, 224, 224);
+  width: 170px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.search-box {
+  padding:72px 210px;
+}
+
+.search {
+  border-radius: 7px;
+  width: 538px;
+  height: 43px;
+}
+
+.glyphicon glyphicon-search {
+}
