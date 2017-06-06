@@ -13,3 +13,6 @@ def recipeResultPage(request):
 
 def stuff(request):
     return render(request, 'web/stuff.html', {})
+
+def footerProvision(request):
+    return render(request, 'web/footerProvision/provision.html',{})
