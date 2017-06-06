@@ -10,8 +10,9 @@
 .main-logo{
   font-family: serif;
   text-align: center;
+  margin-top: 20px;
   margin-bottom: 0;
-  font-size: 45px;
+  font-size: 100px;
 }
 
 .sub-logo{
@@ -19,6 +20,9 @@
   text-align : center;
   color: rgb(148, 146, 146);
   margin-bottom: 65px;
+}
+.base-size menu-item{
+    margin: auto;
 }
 
 .main-menu::after{
@@ -39,7 +43,7 @@
 
 
 .main-menu li a{
-  color: rgb(159,160,164);
+  color: rgb(93 ,93,93);
   text-align: center;
   transition: all 1s;
 }
@@ -52,25 +56,38 @@
 }
 
 .menu-title{
-  font-size: 16px;
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 .sub-item{
-  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .foot-menu::after{
   content: "";
   display: block;
   clear: both;
+  border-bottom: 1px solid black;
+
 }
 
 .foot-menu li{
   float: left;
   width: 25%;
   text-align: center;
+  margin-top: 90px;
+  margin-bottom: 20px;
+
 }
 
 .footer p{
   text-align: center;
+  margin-top: 30px;
+  margin-bottom:150px;
+
 }
