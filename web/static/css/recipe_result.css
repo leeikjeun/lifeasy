@@ -20,9 +20,34 @@
 
 }
 
+.img-box, .result{
+    display: inline-block;
+}
+
+.result{
+  position: relative;
+}
+
+.result-name, .result-text{
+  position: relative;
+  bottom:  90px;
+}
+
 .img-box img{
   max-width: 100%;
   max-height: 100%;
   width: 187px;
   height: 130px;
+}
+
+. {
+  margin-top: 50px;
+  margin-bottom:50px;
+
+}
+
+.pagination{
+  display: block;
+  margin: auto;
+  width: 50%;
 }
