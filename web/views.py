@@ -8,8 +8,11 @@ def mainPage(request):
 def recipePage(request):
     return render(request, 'web/recipe.html',{})
 
-def recipeResultPage(request,pk):
-    return render(request, 'web/recipe_result.html',{'test' : pk})
+def recipeResultPage(request):
+    params = request.GET["recipe_key"]
+
+    return render(request, 'web/recipe_result.html',{'test': params})
+
 
 def stuff(request):
     return render(request, 'web/stuff.html', {})
