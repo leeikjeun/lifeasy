@@ -4,12 +4,12 @@
   <link rel="stylesheet" href="{% static 'css/search_box.css' %}">
 
   <div class="search-box">
-    <form class="" action="" method="get">
+
         <h3 class="recipe-title">
           레시피 검색
         </h3>
         <input type="text" name="recipe_key" class="search"><span class="glyphicon glyphicon-search find"></span>
-    </form>
+
   </div>
 
   <div class="img-list">
@@ -31,14 +31,14 @@
   </div>
 
 <script type="text/javascript">
-  var test = document.querySelector(".search-box form input");
+  var test = document.querySelector(".search-box  input");
 
   test.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode == 13) {
-
+      
     }
-});
+  });
 
 </script>
 
