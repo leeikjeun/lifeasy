@@ -1,904 +1,976 @@
+<!DOCTYPE html>
 {% extends 'web/baseHtml/base_html.html' %}
 {% load staticfiles %}
 {% block content %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NAYO</title>
+    <link rel="stylesheet" href="{% static 'css/stuff.css' %}">
+    <style media="screen">
+    </style>
+  </head>
+  <body>
+    <div class="sort">
+      <img src="static/img/ing1.jpg" alt="채소류" class="sub-sort">
+      <div class="box1">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="감자"> 감자
+        </div>
+        <div class="each">
+          <input type="checkbox" value="고구마"> 고구마
+        </div>
+        <div class="each">
+          <input type="checkbox" value="당근"> 당근
+        </div>
+        <div class="each">
+          <input type="checkbox" value="우엉"> 우엉
+        </div>
+        <div class="each">
+          <input type="checkbox" value="연근"> 연근
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="인삼"> 인삼
+        </div>
+        <div class="each">
+          <input type="checkbox" value="더덕"> 더덕
+        </div>
+        <div class="each">
+          <input type="checkbox" value="도라지"> 도라지
+        </div>
+        <div class="each">
+          <input type="checkbox" value="양파"> 양파
+        </div>
+        <div class="each">
+          <input type="checkbox" value="마늘"> 마늘
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="생강"> 생강
+        </div>
+        <div class="each">
+          <input type="checkbox" value="대파"> 대파
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쪽파"> 쪽파
+        </div>
+        <div class="each">
+          <input type="checkbox" value="실파"> 실파
+        </div>
+        <div class="each">
+          <input type="checkbox" value="상추"> 상추
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="깻잎"> 깻잎
+        </div>
+        <div class="each">
+          <input type="checkbox" value="치커리"> 치커리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="오이"> 오이
+        </div>
+        <div class="each">
+          <input type="checkbox" value="호박"> 호박
+        </div>
+        <div class="each">
+          <input type="checkbox" value="애호박"> 애호박
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="가지"> 가지
+        </div>
+        <div class="each">
+          <input type="checkbox" value="옥수수"> 옥수수
+        </div>
+        <div class="each">
+          <input type="checkbox" value="할라피뇨"> 할라피뇨
+        </div>
+        <div class="each">
+          <input type="checkbox" value="청양고추"> 청양고추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="피클"> 피클
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="오이고추"> 오이고추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="양상추"> 양상추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="브로콜리"> 브로콜리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="피망"> 피망
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파프리카"> 파프리카
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="아스파라거스"><font size = 1.5px> 아스파라거스</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="청경채"> 청경채
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파슬리"> 파슬리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="샐러리"> 샐러리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="양배추"> 양배추
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="배추"> 배추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="무"> 무
+        </div>
+        <div class="each">
+          <input type="checkbox" value="시금치"> 시금치
+        </div>
+        <div class="each">
+          <input type="checkbox" value="부추"> 부추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="미나리"> 미나리
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="콩나물"> 콩나물
+        </div>
+        <div class="each">
+          <input type="checkbox" value="숙주"> 숙주
+        </div>
+        <div class="each">
+          <input type="checkbox" value="고사리"> 고사리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="냉이"> 냉이
+        </div>
+        <div class="each">
+          <input type="checkbox" value="달래"> 달래
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="곤드레"> 곤드레
+        </div>
+        <div class="each">
+          <input type="checkbox" value="시래기"> 시래기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쑥"> 쑥
+        </div>
+        <div class="each">
+          <input type="checkbox" value="유부"> 유부
+        </div>
+        <div class="each">
+          <input type="checkbox" value="두부"> 두부
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="순두부"> 순두부
+        </div>
+        <div class="each">
+          <input type="checkbox" value="도토리묵"> 도토리묵
+        </div>
+        <div class="each">
+          <input type="checkbox" value="곤약"> 곤약
+        </div>
+        <div class="each">
+          <input type="checkbox" value="묵"> 묵
+        </div>
+        <div class="each">
+          <input type="checkbox" value="비지"> 비지
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="로즈마리"> 로즈마리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="허브"> 허브
+        </div>
+        <div class="each">
+          <input type="checkbox" value="비트"> 비트
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
+    </div>
 
-<link rel="stylesheet" href="{% static 'css/stuff.css' %}">
-<style media="screen">
-  
-</style>
+    <div class="sort">
+      <img src="static/img/ing2.jpg" alt="과일&견과류">
+      <div class="box2">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="사과"> 사과
+        </div>
+        <div class="each">
+          <input type="checkbox" value="배"> 배
+        </div>
+        <div class="each">
+          <input type="checkbox" value="귤"> 귤
+        </div>
+        <div class="each">
+          <input type="checkbox" value="한라봉"> 한라봉
+        </div>
+        <div class="each">
+          <input type="checkbox" value="토마토"> 토마토
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="방울토마토"><font size = 2px> 방울토마토</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="포도"> 포도
+        </div>
+        <div class="each">
+          <input type="checkbox" value="수박"> 수박
+        </div>
+        <div class="each">
+          <input type="checkbox" value="참외"> 참외
+        </div>
+        <div class="each">
+          <input type="checkbox" value="석류"> 석류
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="매실"> 매실
+        </div>
+        <div class="each">
+          <input type="checkbox" value="키위"> 키위
+        </div>
+        <div class="each">
+          <input type="checkbox" value="홍시"> 홍시
+        </div>
+        <div class="each">
+          <input type="checkbox" value="감"> 감
+        </div>
+        <div class="each">
+          <input type="checkbox" value="복숭아"> 복숭아
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="자두"> 자두
+        </div>
+        <div class="each">
+          <input type="checkbox" value="딸기"> 딸기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="블루베리"> 블루베리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="크렌베리"> 크렌베리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="오미자"> 오미자
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="바나나"> 바나나
+        </div>
+        <div class="each">
+          <input type="checkbox" value="자몽"> 자몽
+        </div>
+        <div class="each">
+          <input type="checkbox" value="망고"> 망고
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파인애플"> 파인애플
+        </div>
+        <div class="each">
+          <input type="checkbox" value="체리"> 체리
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="레몬"> 레몬
+        </div>
+        <div class="each">
+          <input type="checkbox" value="골드키위"> 골드키위
+        </div>
+        <div class="each">
+          <input type="checkbox" value="아보카도"> 아보카도
+        </div>
+        <div class="each">
+          <input type="checkbox" value="라임"> 라임
+        </div>
+        <div class="each">
+          <input type="checkbox" value="땅콩"> 땅콩
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="호두"> 호두
+        </div>
+        <div class="each">
+          <input type="checkbox" value="아몬드"> 아몬드
+        </div>
+        <div class="each">
+          <input type="checkbox" value="대추"> 대추
+        </div>
+        <div class="each">
+          <input type="checkbox" value="밤"> 밤
+        </div>
+        <div class="each">
+          <input type="checkbox" value="피스타치오"><font size = 2px> 피스타치오</font>
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="은행"> 은행
+        </div>
+        <div class="each">
+          <input type="checkbox" value="잣"> 잣
+        </div>
+        <div class="each">
+          <input type="checkbox" value="건포도"> 건포도
+        </div>
+        <div class="each">
+          <input type="checkbox" value="캐슈너트"> 캐슈너트
+        </div>
+        <div class="each">
+          <input type="checkbox" value="건과일"> 건과일
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="올리브"> 올리브
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        </div>
+      </div>
+    </div>
 
-<div class="sort">
-  <img src="static/img/in1.jpg" alt="채소류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="감자"> 감자
+    <div class="sort">
+      <img src="static/img/ing3.jpg" alt="버섯류">
+      <div class="box3">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="표고버섯"> 표고버섯
+        </div>
+        <div class="each">
+          <input type="checkbox" value="새송이버섯"><font size = 2px> 새송이버섯</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="양송이버섯"><font size = 2px> 양송이버섯</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="팽이버섯"> 팽이버섯
+        </div>
+        <div class="each">
+          <input type="checkbox" value="느타리버섯"><font size = 2px> 느타리버섯</font>
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="목이버섯"> 목이버섯
+        </div>
+        <div class="each">
+          <input type="checkbox" value="영지버섯"> 영지버섯
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="고구마"> 고구마
-    </div>
-    <div class="each">
-      <input type="checkbox" value="당근"> 당근
-    </div>
-    <div class="each">
-      <input type="checkbox" value="우엉"> 우엉
-    </div>
-    <div class="each">
-      <input type="checkbox" value="연근"> 연근
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="인삼"> 인삼
-    </div>
-    <div class="each">
-      <input type="checkbox" value="더덕"> 더덕
-    </div>
-    <div class="each">
-      <input type="checkbox" value="도라지"> 도라지
-    </div>
-    <div class="each">
-      <input type="checkbox" value="양파"> 양파
-    </div>
-    <div class="each">
-      <input type="checkbox" value="마늘"> 마늘
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="생강"> 생강
-    </div>
-    <div class="each">
-      <input type="checkbox" value="대파"> 대파
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쪽파"> 쪽파
-    </div>
-    <div class="each">
-      <input type="checkbox" value="실파"> 실파
-    </div>
-    <div class="each">
-      <input type="checkbox" value="상추"> 상추
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="깻잎"> 깻잎
-    </div>
-    <div class="each">
-      <input type="checkbox" value="치커리"> 치커리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="오이"> 오이
-    </div>
-    <div class="each">
-      <input type="checkbox" value="호박"> 호박
-    </div>
-    <div class="each">
-      <input type="checkbox" value="애호박"> 애호박
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="가지"> 가지
-    </div>
-    <div class="each">
-      <input type="checkbox" value="옥수수"> 옥수수
-    </div>
-    <div class="each">
-      <input type="checkbox" value="할라피뇨"> 할라피뇨
-    </div>
-    <div class="each">
-      <input type="checkbox" value="청양고추"> 청양고추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="피클"> 피클
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="오이고추"> 오이고추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="양상추"> 양상추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="브로콜리"> 브로콜리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="피망"> 피망
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파프리카"> 파프리카
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="아스파라거스"> 아스파라거스
-    </div>
-    <div class="each">
-      <input type="checkbox" value="청경채"> 청경채
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파슬리"> 파슬리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="샐러리"> 샐러리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="양배추"> 양배추
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="배추"> 배추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="무"> 무
-    </div>
-    <div class="each">
-      <input type="checkbox" value="시금치"> 시금치
-    </div>
-    <div class="each">
-      <input type="checkbox" value="부추"> 부추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="미나리"> 미나리
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="콩나물"> 콩나물
-    </div>
-    <div class="each">
-      <input type="checkbox" value="숙주"> 숙주
-    </div>
-    <div class="each">
-      <input type="checkbox" value="고사리"> 고사리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="냉이"> 냉이
-    </div>
-    <div class="each">
-      <input type="checkbox" value="달래"> 달래
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="곤드레"> 곤드레
-    </div>
-    <div class="each">
-      <input type="checkbox" value="시래기"> 시래기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쑥"> 쑥
-    </div>
-    <div class="each">
-      <input type="checkbox" value="유부"> 유부
-    </div>
-    <div class="each">
-      <input type="checkbox" value="두부"> 두부
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="순두부"> 순두부
-    </div>
-    <div class="each">
-      <input type="checkbox" value="도토리묵"> 도토리묵
-    </div>
-    <div class="each">
-      <input type="checkbox" value="곤약"> 곤약
-    </div>
-    <div class="each">
-      <input type="checkbox" value="묵"> 묵
-    </div>
-    <div class="each">
-      <input type="checkbox" value="비지"> 비지
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="로즈마리"> 로즈마리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="허브"> 허브
-    </div>
-    <div class="each">
-      <input type="checkbox" value="비트"> 비트
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in2.jpg" alt="과일&견과류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="사과"> 사과
+    <div class="sort">
+      <img src="static/img/ing4.jpg" alt="해산물">
+      <div class="box4">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="고등어"> 고등어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="갈치"> 갈치
+        </div>
+        <div class="each">
+          <input type="checkbox" value="조기"> 조기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="삼치"> 삼치
+        </div>
+        <div class="each">
+          <input type="checkbox" value="대구"> 대구
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="연어"> 연어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="굴비"> 굴비
+        </div>
+        <div class="each">
+          <input type="checkbox" value="꽁치"> 꽁치
+        </div>
+        <div class="each">
+          <input type="checkbox" value="동태"> 동태
+        </div>
+        <div class="each">
+          <input type="checkbox" value="코다리"> 코다리
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="아귀"> 아귀
+        </div>
+        <div class="each">
+          <input type="checkbox" value="장어"> 장어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="우럭"> 우럭
+        </div>
+        <div class="each">
+          <input type="checkbox" value="옥돔"> 옥돔
+        </div>
+        <div class="each">
+          <input type="checkbox" value="오징어"> 오징어
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="낙지"> 낙지
+        </div>
+        <div class="each">
+          <input type="checkbox" value="새우"> 새우
+        </div>
+        <div class="each">
+          <input type="checkbox" value="굴"> 굴
+        </div>
+        <div class="each">
+          <input type="checkbox" value="바지락"> 바지락
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쭈꾸미"> 쭈꾸미
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="홍합"> 홍합
+        </div>
+        <div class="each">
+          <input type="checkbox" value="꽃게"> 꽃게
+        </div>
+        <div class="each">
+          <input type="checkbox" value="해파리"> 해파리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="꼬막"> 꼬막
+        </div>
+        <div class="each">
+          <input type="checkbox" value="미더덕"> 미더덕
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="전복"> 전복
+        </div>
+        <div class="each">
+          <input type="checkbox" value="대하"> 대하
+        </div>
+        <div class="each">
+          <input type="checkbox" value="날치알"> 날치알
+        </div>
+        <div class="each">
+          <input type="checkbox" value="문어"> 문어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="새우"> 새우
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="갑오징어"> 갑오징어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="멸치"> 멸치
+        </div>
+        <div class="each">
+          <input type="checkbox" value="미역"> 미역
+        </div>
+        <div class="each">
+          <input type="checkbox" value="다시마"> 다시마
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쥐포"> 쥐포
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="건새우"> 건새우
+        </div>
+        <div class="each">
+          <input type="checkbox" value="북어"> 북어
+        </div>
+        <div class="each">
+          <input type="checkbox" value="진미채"> 진미채
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파래"> 파래
+        </div>
+        <div class="each">
+          <input type="checkbox" value="매생이"> 매생이
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="황태"> 황태
+        </div>
+        <div class="each">
+          <input type="checkbox" value="가쓰오부시"><font size = 2px> 가쓰오부시</font>
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="배"> 배
-    </div>
-    <div class="each">
-      <input type="checkbox" value="귤"> 귤
-    </div>
-    <div class="each">
-      <input type="checkbox" value="한라봉"> 한라봉
-    </div>
-    <div class="each">
-      <input type="checkbox" value="토마토"> 토마토
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="방울토마토"> 방울토마토
-    </div>
-    <div class="each">
-      <input type="checkbox" value="포도"> 포도
-    </div>
-    <div class="each">
-      <input type="checkbox" value="수박"> 수박
-    </div>
-    <div class="each">
-      <input type="checkbox" value="참외"> 참외
-    </div>
-    <div class="each">
-      <input type="checkbox" value="석류"> 석류
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="매실"> 매실
-    </div>
-    <div class="each">
-      <input type="checkbox" value="키위"> 키위
-    </div>
-    <div class="each">
-      <input type="checkbox" value="홍시"> 홍시
-    </div>
-    <div class="each">
-      <input type="checkbox" value="감"> 감
-    </div>
-    <div class="each">
-      <input type="checkbox" value="복숭아"> 복숭아
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="자두"> 자두
-    </div>
-    <div class="each">
-      <input type="checkbox" value="딸기"> 딸기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="블루베리"> 블루베리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="크렌베리"> 크렌베리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="오미자"> 오미자
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="바나나"> 바나나
-    </div>
-    <div class="each">
-      <input type="checkbox" value="자몽"> 자몽
-    </div>
-    <div class="each">
-      <input type="checkbox" value="망고"> 망고
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파인애플"> 파인애플
-    </div>
-    <div class="each">
-      <input type="checkbox" value="체리"> 체리
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="레몬"> 레몬
-    </div>
-    <div class="each">
-      <input type="checkbox" value="골드키위"> 골드키위
-    </div>
-    <div class="each">
-      <input type="checkbox" value="아보카도"> 아보카도
-    </div>
-    <div class="each">
-      <input type="checkbox" value="라임"> 라임
-    </div>
-    <div class="each">
-      <input type="checkbox" value="땅콩"> 땅콩
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="호두"> 호두
-    </div>
-    <div class="each">
-      <input type="checkbox" value="아몬드"> 아몬드
-    </div>
-    <div class="each">
-      <input type="checkbox" value="대추"> 대추
-    </div>
-    <div class="each">
-      <input type="checkbox" value="밤"> 밤
-    </div>
-    <div class="each">
-      <input type="checkbox" value="피스타치오"> 피스타치오
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="은행"> 은행
-    </div>
-    <div class="each">
-      <input type="checkbox" value="잣"> 잣
-    </div>
-    <div class="each">
-      <input type="checkbox" value="건포도"> 건포도
-    </div>
-    <div class="each">
-      <input type="checkbox" value="캐슈너트"> 캐슈너트
-    </div>
-    <div class="each">
-      <input type="checkbox" value="건과일"> 건과일
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="올리브"> 올리브
-    </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in3.jpg" alt="버섯류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="표고버섯"> 표고버섯
+    <div class="sort">
+      <img src="static/img/ing5.jpg" alt="가공식품">
+      <div class="box5">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="우유"> 우유
+        </div>
+        <div class="each">
+          <input type="checkbox" value="모짜렐라 치즈"><font size = 1px> 모짜렐라 치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="슬라이스 치즈"><font size = 1px> 슬라이스 치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파마산 치즈"><font size = 2px> 파마산 치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="버터"> 버터
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="생크림"> 생크림
+        </div>
+        <div class="each">
+          <input type="checkbox" value="크림치즈"> 크림치즈
+        </div>
+        <div class="each">
+          <input type="checkbox" value="스트링치즈"><font size = 2px> 스트링치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="두유"> 두유
+        </div>
+        <div class="each">
+          <input type="checkbox" value="요거트"> 요거트
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="연유"> 연유
+        </div>
+        <div class="each">
+          <input type="checkbox" value="고르곤졸라 치즈"><font size = 1px> 고르곤졸라 치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="휘핑크림"> 휘핑크림
+        </div>
+        <div class="each">
+          <input type="checkbox" value="리코타 치즈"><font size = 2px> 리코타 치즈</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="만두"> 만두
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="순대"> 순대
+        </div>
+        <div class="each">
+          <input type="checkbox" value="돈까스"> 돈까스
+        </div>
+        <div class="each">
+          <input type="checkbox" value="카레"> 카레
+        </div>
+        <div class="each">
+          <input type="checkbox" value="짜장"> 짜장
+        </div>
+        <div class="each">
+          <input type="checkbox" value="스팸"> 스팸
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="크래미"> 크래미
+        </div>
+        <div class="each">
+          <input type="checkbox" value="유부초밥"> 유부초밥
+        </div>
+        <div class="each">
+          <input type="checkbox" value="햄, 소세지"><font size = 2px> 햄, 소세지</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="베이컨"> 베이컨
+        </div>
+        <div class="each">
+          <input type="checkbox" value="어묵"> 어묵
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="크림스프"> 크림스프
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쌈무"> 쌈무
+        </div>
+        <div class="each">
+          <input type="checkbox" value="누룽지"> 누룽지
+        </div>
+        <div class="each">
+          <input type="checkbox" value="참치캔"> 참치캔
+        </div>
+        <div class="each">
+          <input type="checkbox" value="골벵이"> 골벵이
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="김치"> 김치
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="새송이버섯"> 새송이버섯
-    </div>
-    <div class="each">
-      <input type="checkbox" value="양송이버섯"> 양송이버섯
-    </div>
-    <div class="each">
-      <input type="checkbox" value="팽이버섯"> 팽이버섯
-    </div>
-    <div class="each">
-      <input type="checkbox" value="느타리버섯"> 느타리버섯
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="목이버섯"> 목이버섯
-    </div>
-    <div class="each">
-      <input type="checkbox" value="영지버섯"> 영지버섯
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in4.jpg" alt="해산물">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="고등어"> 고등어
+    <div class="sort">
+      <img src="static/img/ing6.jpg" alt="면류">
+      <div class="box6">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="당면"> 당면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="메밀면"> 메밀면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="국수"> 국수
+        </div>
+        <div class="each">
+          <input type="checkbox" value="파스타면"> 파스타면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="칼국수면"> 칼국수면
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="쌀국수면"> 쌀국수면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="우동면"> 우동면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쫄면"> 쫄면
+        </div>
+        <div class="each">
+          <input type="checkbox" value="냉면사리"> 냉면사리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="마카로니"> 마카로니
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="갈치"> 갈치
-    </div>
-    <div class="each">
-      <input type="checkbox" value="조기"> 조기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="삼치"> 삼치
-    </div>
-    <div class="each">
-      <input type="checkbox" value="대구"> 대구
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="연어"> 연어
-    </div>
-    <div class="each">
-      <input type="checkbox" value="굴비"> 굴비
-    </div>
-    <div class="each">
-      <input type="checkbox" value="꽁치"> 꽁치
-    </div>
-    <div class="each">
-      <input type="checkbox" value="동태"> 동태
-    </div>
-    <div class="each">
-      <input type="checkbox" value="코다리"> 코다리
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="아귀"> 아귀
-    </div>
-    <div class="each">
-      <input type="checkbox" value="장어"> 장어
-    </div>
-    <div class="each">
-      <input type="checkbox" value="우럭"> 우럭
-    </div>
-    <div class="each">
-      <input type="checkbox" value="옥돔"> 옥돔
-    </div>
-    <div class="each">
-      <input type="checkbox" value="오징어"> 오징어
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="낙지"> 낙지
-    </div>
-    <div class="each">
-      <input type="checkbox" value="새우"> 새우
-    </div>
-    <div class="each">
-      <input type="checkbox" value="굴"> 굴
-    </div>
-    <div class="each">
-      <input type="checkbox" value="바지락"> 바지락
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쭈꾸미"> 쭈꾸미
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="홍합"> 홍합
-    </div>
-    <div class="each">
-      <input type="checkbox" value="꽃게"> 꽃게
-    </div>
-    <div class="each">
-      <input type="checkbox" value="해파리"> 해파리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="꼬막"> 꼬막
-    </div>
-    <div class="each">
-      <input type="checkbox" value="미더덕"> 미더덕
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="전복"> 전복
-    </div>
-    <div class="each">
-      <input type="checkbox" value="대하"> 대하
-    </div>
-    <div class="each">
-      <input type="checkbox" value="날치알"> 날치알
-    </div>
-    <div class="each">
-      <input type="checkbox" value="문어"> 문어
-    </div>
-    <div class="each">
-      <input type="checkbox" value="새우"> 새우
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="갑오징어"> 갑오징어
-    </div>
-    <div class="each">
-      <input type="checkbox" value="멸치"> 멸치
-    </div>
-    <div class="each">
-      <input type="checkbox" value="미역"> 미역
-    </div>
-    <div class="each">
-      <input type="checkbox" value="다시마"> 다시마
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쥐포"> 쥐포
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="건새우"> 건새우
-    </div>
-    <div class="each">
-      <input type="checkbox" value="북어"> 북어
-    </div>
-    <div class="each">
-      <input type="checkbox" value="진미채"> 진미채
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파래"> 파래
-    </div>
-    <div class="each">
-      <input type="checkbox" value="매생이"> 매생이
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="황태"> 황태
-    </div>
-    <div class="each">
-      <input type="checkbox" value="가쓰오부시"> 가쓰오부시
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in5.jpg" alt="가공식품">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="우유"> 우유
+    <div class="sort">
+      <img src="static/img/ing7.jpg" alt="가루">
+      <div class="box7">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="찹쌀가루"> 찹쌀가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="녹말가루"> 녹말가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="콩가루"> 콩가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="밀가루"> 밀가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="녹차가루"> 녹차가루
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="전분가루"> 전분가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="계피가루"> 계피가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="부침가루"> 부침가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="케이크가루"><font size = 2px> 케이크가루</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="코코아가루"><font size = 2px> 코코아가루</font>
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="빵가루"> 빵가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="베이킹파우더"><font size = 1px> 베이킹파우더</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="이스트"> 이스트
+        </div>
+        <div class="each">
+          <input type="checkbox" value="튀김가루"> 튀김가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="미숫가루"> 미숫가루
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="모짜렐라 치즈"> 모짜렐라 치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="슬라이스 치즈"> 슬라이스 치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파마산 치즈"> 파마산 치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="버터"> 버터
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="생크림"> 생크림
-    </div>
-    <div class="each">
-      <input type="checkbox" value="크림치즈"> 크림치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="스트링치즈"> 스트링치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="두유"> 두유
-    </div>
-    <div class="each">
-      <input type="checkbox" value="요거트"> 요거트
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="연유"> 연유
-    </div>
-    <div class="each">
-      <input type="checkbox" value="고르곤졸라 치즈"> 고르곤졸라 치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="휘핑크림"> 휘핑크림
-    </div>
-    <div class="each">
-      <input type="checkbox" value="리코타 치즈"> 리코타 치즈
-    </div>
-    <div class="each">
-      <input type="checkbox" value="만두"> 만두
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="순대"> 순대
-    </div>
-    <div class="each">
-      <input type="checkbox" value="돈까스"> 돈까스
-    </div>
-    <div class="each">
-      <input type="checkbox" value="카레"> 카레
-    </div>
-    <div class="each">
-      <input type="checkbox" value="짜장"> 짜장
-    </div>
-    <div class="each">
-      <input type="checkbox" value="스팸"> 스팸
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="크래미"> 크래미
-    </div>
-    <div class="each">
-      <input type="checkbox" value="유부초밥"> 유부초밥
-    </div>
-    <div class="each">
-      <input type="checkbox" value="햄, 소세지"> 햄, 소세지
-    </div>
-    <div class="each">
-      <input type="checkbox" value="베이컨"> 베이컨
-    </div>
-    <div class="each">
-      <input type="checkbox" value="어묵"> 어묵
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="크림스프"> 크림스프
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쌈무"> 쌈무
-    </div>
-    <div class="each">
-      <input type="checkbox" value="누룽지"> 누룽지
-    </div>
-    <div class="each">
-      <input type="checkbox" value="참치캔"> 참치캔
-    </div>
-    <div class="each">
-      <input type="checkbox" value="골벵이"> 골벵이
-    </div>
-    <div class="each">
-      <input type="checkbox" value="김치"> 김치
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in6.jpg" alt="면류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="당면"> 당면
+    <div class="sort">
+      <img src="static/img/ing8.jpg" alt="양념류">
+      <div class="box8">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="멸치액젓"> 멸치액젓
+        </div>
+        <div class="each">
+          <input type="checkbox" value="새우젓"> 새우젓
+        </div>
+        <div class="each">
+          <input type="checkbox" value="까나리액젓"><font size = 2px> 까나리액젓</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="다시다"> 다시다
+        </div>
+        <div class="each">
+          <input type="checkbox" value="설탕"> 설탕
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="소금"> 소금
+        </div>
+        <div class="each">
+          <input type="checkbox" value="고춧가루"> 고춧가루
+        </div>
+        <div class="each">
+          <input type="checkbox" value="미원"> 미원
+        </div>
+        <div class="each">
+          <input type="checkbox" value="월계수잎"> 월계수잎
+        </div>
+        <div class="each">
+          <input type="checkbox" value="후추"> 후추
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="잼"> 잼
+        </div>
+        <div class="each">
+          <input type="checkbox" value="물엿"> 물엿
+        </div>
+        <div class="each">
+          <input type="checkbox" value="식초"> 식초
+        </div>
+        <div class="each">
+          <input type="checkbox" value="굴소스"> 굴소스
+        </div>
+        <div class="each">
+          <input type="checkbox" value="마요네즈"> 마요네즈
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="머스타드 소스"><font size = 1px> 머스타드 소스</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="꿀"> 꿀
+        </div>
+        <div class="each">
+          <input type="checkbox" value="간장"> 간장
+        </div>
+        <div class="each">
+          <input type="checkbox" value="올리고당"> 올리고당
+        </div>
+        <div class="each">
+          <input type="checkbox" value="된장"> 된장
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="케찹"> 케찹
+        </div>
+        <div class="each">
+          <input type="checkbox" value="쌈장"> 쌈장
+        </div>
+        <div class="each">
+          <input type="checkbox" value="매실청"> 매실청
+        </div>
+        <div class="each">
+          <input type="checkbox" value="고추장"> 고추장
+        </div>
+        <div class="each">
+          <input type="checkbox" value="초고추장"> 초고추장
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="토마토소스"><font size = 2px> 토마토소스</font>
+        </div>
+        <div class="each">
+          <input type="checkbox" value="참기름"> 참기름
+        </div>
+        <div class="each">
+          <input type="checkbox" value="식용유"> 식용유
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="메밀면"> 메밀면
-    </div>
-    <div class="each">
-      <input type="checkbox" value="국수"> 국수
-    </div>
-    <div class="each">
-      <input type="checkbox" value="파스타면"> 파스타면
-    </div>
-    <div class="each">
-      <input type="checkbox" value="칼국수면"> 칼국수면
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="쌀국수면"> 쌀국수면
-    </div>
-    <div class="each">
-      <input type="checkbox" value="우동면"> 우동면
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쫄면"> 쫄면
-    </div>
-    <div class="each">
-      <input type="checkbox" value="냉면사리"> 냉면사리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="마카로니"> 마카로니
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in7.jpg" alt="가루">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="찹쌀가루"> 찹쌀가루
+    <div class="sort">
+      <img src="static/img/ing9.jpg" alt="곡류">
+      <div class="box9">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="쌀"> 쌀
+        </div>
+        <div class="each">
+          <input type="checkbox" value="찹쌀"> 찹쌀
+        </div>
+        <div class="each">
+          <input type="checkbox" value="현미"> 현미
+        </div>
+        <div class="each">
+          <input type="checkbox" value="콩"> 콩
+        </div>
+        <div class="each">
+          <input type="checkbox" value="팥"> 팥
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="보리"> 보리
+        </div>
+        <div class="each">
+          <input type="checkbox" value="수수"> 수수
+        </div>
+        <div class="each">
+          <input type="checkbox" value="조"> 조
+        </div>
+        <div class="each">
+          <input type="checkbox" value="녹두"> 녹두
+        </div>
+        <div class="each">
+          <input type="checkbox" value="율무"> 율무
+        </div>
+      </div>
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="깨"> 깨
+        </div>
+        <div class="each">
+          <input type="checkbox" value="오트밀"> 오트밀
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+        <div class="each">
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="녹말가루"> 녹말가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="콩가루"> 콩가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="밀가루"> 밀가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="녹차가루"> 녹차가루
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="전분가루"> 전분가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="계피가루"> 계피가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="부침가루"> 부침가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="케이크가루"> 케이크가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="코코아가루"> 코코아가루
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="빵가루"> 빵가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="베이킹파우더"> 베이킹파우더
-    </div>
-    <div class="each">
-      <input type="checkbox" value="이스트"> 이스트
-    </div>
-    <div class="each">
-      <input type="checkbox" value="튀김가루"> 튀김가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="미숫가루"> 미숫가루
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in8.jpg" alt="양념류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="멸치액젓"> 멸치액젓
+    <div class="sort">
+      <img src="static/img/ing10.jpg" alt="육류">
+      <div class="box10">
+      <div class="ingredient">
+        <div class="each">
+          <input type="checkbox" value="소고기"> 소고기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="닭고기"> 닭고기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="돼지고기"> 돼지고기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="양고기"> 양고기
+        </div>
+        <div class="each">
+          <input type="checkbox" value="오리고기"> 오리고기
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="each">
-      <input type="checkbox" value="새우젓"> 새우젓
-    </div>
-    <div class="each">
-      <input type="checkbox" value="까나리액젓"> 까나리액젓
-    </div>
-    <div class="each">
-      <input type="checkbox" value="다시다"> 다시다
-    </div>
-    <div class="each">
-      <input type="checkbox" value="설탕"> 설탕
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="소금"> 소금
-    </div>
-    <div class="each">
-      <input type="checkbox" value="고춧가루"> 고춧가루
-    </div>
-    <div class="each">
-      <input type="checkbox" value="미원"> 미원
-    </div>
-    <div class="each">
-      <input type="checkbox" value="월계수잎"> 월계수잎
-    </div>
-    <div class="each">
-      <input type="checkbox" value="후추"> 후추
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="잼"> 잼
-    </div>
-    <div class="each">
-      <input type="checkbox" value="물엿"> 물엿
-    </div>
-    <div class="each">
-      <input type="checkbox" value="식초"> 식초
-    </div>
-    <div class="each">
-      <input type="checkbox" value="굴소스"> 굴소스
-    </div>
-    <div class="each">
-      <input type="checkbox" value="마요네즈"> 마요네즈
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="머스타드 소스"> 머스타드 소스
-    </div>
-    <div class="each">
-      <input type="checkbox" value="꿀"> 꿀
-    </div>
-    <div class="each">
-      <input type="checkbox" value="간장"> 간장
-    </div>
-    <div class="each">
-      <input type="checkbox" value="올리고당"> 올리고당
-    </div>
-    <div class="each">
-      <input type="checkbox" value="된장"> 된장
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="케찹"> 케찹
-    </div>
-    <div class="each">
-      <input type="checkbox" value="쌈장"> 쌈장
-    </div>
-    <div class="each">
-      <input type="checkbox" value="매실청"> 매실청
-    </div>
-    <div class="each">
-      <input type="checkbox" value="고추장"> 고추장
-    </div>
-    <div class="each">
-      <input type="checkbox" value="초고추장"> 초고추장
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="토마토소스"> 토마토소스
-    </div>
-    <div class="each">
-      <input type="checkbox" value="참기름"> 참기름
-    </div>
-    <div class="each">
-      <input type="checkbox" value="식용유"> 식용유
-    </div>
-  </div>
-</div>
 
-<div class="sort">
-  <img src="static/img/in9.jpg" alt="곡류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="쌀"> 쌀
-    </div>
-    <div class="each">
-      <input type="checkbox" value="찹쌀"> 찹쌀
-    </div>
-    <div class="each">
-      <input type="checkbox" value="현미"> 현미
-    </div>
-    <div class="each">
-      <input type="checkbox" value="콩"> 콩
-    </div>
-    <div class="each">
-      <input type="checkbox" value="팥"> 팥
-    </div>
+  <div class="search">
+    <input type="submit" value="검  색" class="btn btn-default">
   </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="보리"> 보리
-    </div>
-    <div class="each">
-      <input type="checkbox" value="수수"> 수수
-    </div>
-    <div class="each">
-      <input type="checkbox" value="조"> 조
-    </div>
-    <div class="each">
-      <input type="checkbox" value="녹두"> 녹두
-    </div>
-    <div class="each">
-      <input type="checkbox" value="율무"> 율무
-    </div>
-  </div>
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="깨"> 깨
-    </div>
-    <div class="each">
-      <input type="checkbox" value="오트밀"> 오트밀
-    </div>
-  </div>
-</div>
-
-<div class="sort">
-  <img src="static/img/in10.jpg" alt="육류">
-  <div class="ingredient">
-    <div class="each">
-      <input type="checkbox" value="소고기"> 소고기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="닭고기"> 닭고기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="돼지고기"> 돼지고기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="양고기"> 양고기
-    </div>
-    <div class="each">
-      <input type="checkbox" value="오리고기"> 오리고기
-    </div>
-  </div>
-</div>
-
-<input type="submit" value="검  색">
-
-{% endblock %}
+    {% endblock %}
+  </body>
+</html>
