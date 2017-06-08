@@ -1,0 +1,19 @@
+{% extends 'web/baseHtml/base_html.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/complete.css' %}">
+
+  <div class="page-header">
+    <h3 class="faq">문의</h3>
+    <p class="notice">입력하신 문의사항은 관리자의 메일로 전송됩니다.</p>
+  </div>
+  <div class="complete-box">
+    <div class="complete">
+      메일 전송이 완료되었습니다.
+    </div>
+      <input type="button" name="go-home" value="HOME으로 가기" class="btn btn-default">
+      <a href="base_html.html"></a>
+  </div>
+
+{% endblock %}

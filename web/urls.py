@@ -9,4 +9,5 @@ urlpatterns = [
     url(r'^footer/advertising$', views.advertising, name='advertising'),
     url(r'^footer/faq$', views.faq, name='faq'),
     url(r'^stuff$', views.stuff, name='stuff'),
+    url(r'^footer/complete$', views.complete, name='complete'),
 ]

@@ -25,3 +25,6 @@ def advertising(request):
 
 def faq(request):
     return render(request, 'web/footerProvision/faq.html',{})
+
+def complete(request):
+    return render(request, 'web/footerProvision/complete.html',{})
