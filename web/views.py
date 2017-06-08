@@ -21,7 +21,7 @@ def footerProvision(request):
     return render(request, 'web/footerProvision/provision.html',{})
 
 def advertising(request):
-    return render(request, 'web/footerProvision/adversing.html',{})
+    return render(request, 'web/footerProvision/advertising.html',{})
 
 def faq(request):
     return render(request, 'web/footerProvision/faq.html',{})
