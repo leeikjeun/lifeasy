@@ -8,9 +8,55 @@
   border-radius: 15px;
 }
 
+.sort{
+  transition: all 0.5s;
+  border-radius: 15px;
+}
+
+.vegetable-toggle{
+  background-color: rgb(249,198,200);
+}
+
+.fruit-toggle{
+  background-color: rgb(251, 214, 187);
+}
+
+.mushroom-toggle{
+  background-color: rgb(251, 248, 217);
+}
+
+.fish-toggle{
+  background-color: rgb(199,244,213);
+}
+
+.processed-foods-toggle{
+  background-color: rgb(187,235,255);
+}
+
+.noodle-toggle{
+  background-color: rgb(205,208,241);
+}
+
+.powder-toggle{
+  background-color: rgb(183,199,222);
+}
+
+.flavor-toggle{
+  background-color: rgb(230,199,231);
+}
+
+.rice-toggle{
+  background-color: rgb(210,210,210);
+}
+
+.meat-toggle{
+  background-color: rgb(204,188,201);
+}
+
 .vegetable:hover{
   background-color: rgb(249,198,200);
 }
+
 
 .fruit:hover{
   background-color: rgb(251, 214, 187);
@@ -47,6 +93,8 @@
 .meat:hover{
   background-color: rgb(204,188,201);
 }
+
+
 
 .box1 {
   overflow: hidden;

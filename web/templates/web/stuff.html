@@ -965,4 +965,59 @@
     </a>
   </div>
 
+
+  <script type="text/javascript">
+    var vegetable_toggle = document.querySelector('.vegetable');
+    var fruit_toggle = document.querySelector('.fruit');
+    var mushroom_toggle = document.querySelector('.mushroom');
+    var fish_toggle = document.querySelector('.fish');
+    var processed_foods_toggle = document.querySelector('.processed-foods');
+    var noodle_toggle = document.querySelector('.noodle');
+    var powder_toggle = document.querySelector('.powder');
+    var flavor_toggle = document.querySelector('.flavor');
+    var rice_toggle = document.querySelector('.rice');
+    var meat_toggle = document.querySelector('.meat');
+
+    vegetable_toggle.addEventListener('click',function(){
+      this.classList.toggle("vegetable-toggle");
+    });
+
+    fruit_toggle.addEventListener('click',function(){
+      this.classList.toggle("fruit-toggle");
+    });
+
+    mushroom_toggle.addEventListener('click',function(){
+      this.classList.toggle("mushroom-toggle");
+    });
+
+    fish_toggle.addEventListener('click',function(){
+      this.classList.toggle("fish-toggle");
+    });
+
+    processed_foods_toggle.addEventListener('click',function(){
+      this.classList.toggle("processed-foods-toggle");
+    });
+
+    noodle_toggle.addEventListener('click',function(){
+      this.classList.toggle("noodle-toggle");
+    });
+
+    powder_toggle.addEventListener('click',function(){
+      this.classList.toggle("powder-toggle");
+    });
+
+    flavor_toggle.addEventListener('click',function(){
+      this.classList.toggle("flavor-toggle");
+    });
+
+    rice_toggle.addEventListener('click',function(){
+      this.classList.toggle("rice-toggle");
+    });
+
+    meat_toggle.addEventListener('click',function(){
+      this.classList.toggle("meat-toggle");
+    });
+
+  </script>
+
     {% endblock %}
