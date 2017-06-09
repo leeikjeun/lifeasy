@@ -1,5 +1,4 @@
 .sort img {
-  display: flex;
   margin: auto;
   margin-top: 70px;
   margin-bottom: 20px;
@@ -9,7 +8,6 @@
 }
 
 .sort{
-  height: 176px;
   transition: all 0.5s;
   border-radius: 15px;
 }

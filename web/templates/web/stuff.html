@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="{% static 'css/stuff.css' %}">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
     <div class="sort vegetable">
-      <img src="{% static '/img/ing1.jpg' %}" alt="채소류" class="sub-sort">
+      <div class="test-img">
+        <img src="{% static '/img/ing1.jpg' %}" alt="채소류" class="sub-sort">
+      </div>
       <div class="box1">
       <div class="ingredient">
         <div class="each">
@@ -213,7 +215,7 @@
     </div>
 
     <div class="sort fruit">
-      <img src="{% static '/img/ing2.jpg' %}"" alt="과일&견과류">
+      <img src="{% static '/img/ing2.jpg' %}" alt="과일 견과류">
       <div class="box2">
       <div class="ingredient">
         <div class="each">
@@ -979,8 +981,24 @@
     var rice_toggle = document.querySelector('.rice');
     var meat_toggle = document.querySelector('.meat');
 
+    var vegetable_menu = document.querySelector('.box1');
+    var fruit_menu = document.querySelector('.box2');
+    var mushroom_menu = document.querySelector('.box3');
+    var fish_menu = document.querySelector('.box4');
+    var processed_foods_menu = document.querySelector('.box5');
+    var noodle_menu = document.querySelector('.box6');
+    var powder_menu = document.querySelector('.box7');
+    var flavor_menu = document.querySelector('.box8');
+    var rice_menu = document.querySelector('.box9');
+    var meat_menu = document.querySelector('.box10');
+
     vegetable_toggle.addEventListener('click',function(){
       this.classList.toggle("vegetable-toggle");
+      if(vegetable_menu.style.height == ""){
+        vegetable_menu.style.height = "714px";
+      }else{
+        vegetable_menu.style.height = "";
+      }
     });
 
     fruit_toggle.addEventListener('click',function(){
