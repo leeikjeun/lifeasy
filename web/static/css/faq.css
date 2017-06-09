@@ -1,0 +1,72 @@
+.page-header{
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+
+.faq{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 50px;
+}
+
+.notice{
+  font-size: 21px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  color: rgb(148, 146, 146);
+}
+
+.faq, .notice{
+  display: inline-block;
+}
+
+.faq-box{
+  border: 1px solid black;
+  border-radius: 7px;
+  width: 875px;
+  height: 518px;
+  margin-left: 50px;
+}
+
+.faq-box h3{
+  font-size: 33px;
+  font-weight: bold;
+  margin: 20px 10px 25px 40px;
+}
+
+.faq-title{
+  border-radius: 4px;
+  border: 1px solid gray;
+  width: 718px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.faq-content{
+  border-radius: 4px;
+  border: 1px solid gray;
+  width: 805PX;
+  height: 380px;
+  margin: 0px 35px 9px 35px;
+  padding: 20px 20px 0px 20px;
+}
+
+.faq-box h3, .faq-title{
+  display: inline-block;
+}
+
+.submit{
+  width: 107px;
+  height: 41px;
+  margin-left: 84%;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color:white;
+}
+
+.submit:hover{
+  color: black;
+  background-color: rgb(234, 234, 234);
+}

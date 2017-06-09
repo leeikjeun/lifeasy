@@ -2,17 +2,18 @@
 {% load staticfiles %}
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'css/faq.css' %}">
+
   <div class="page-header">
-    <h3>
-      문의
-    </h3>
-    <p>입력하신 문의사항은 관리자의 메일로 전송됩니다.</p>
+    <h3 class="faq">문의</h3>
+    <p class="notice">입력하신 문의사항은 관리자의 메일로 전송됩니다.</p>
   </div>
   <div class="faq-box">
     <form class="" action="index.html" method="post">
-      <h3>제목</h3><input type="text" name="" value="">
-      <input type="textarea" name="" value="">
-      <input type="submit" name="" value="">
+      <h3>제목</h3>
+      <input class="faq-title" type="text" name="faq-title" placeholder="제목을 입력해주세요.">
+      <textarea class="faq-content" name="name" placeholder="내용을 입력해주세요."></textarea>
+      <input class="submit" type="submit" name="submit" value="메일보내기">
     </form>
   </div>
 
