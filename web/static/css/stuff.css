@@ -1,14 +1,15 @@
-.sort img {
+.sort {
   margin: auto;
   margin-top: 70px;
   margin-bottom: 20px;
   width: 600px;
-  height: 175px;
+  transition: all 0.5s;
   border-radius: 15px;
 }
 
-.sort{
-  transition: all 0.5s;
+.sub-sort {
+  width: 600px;
+  height: 175px;
   border-radius: 15px;
 }
 
