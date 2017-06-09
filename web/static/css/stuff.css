@@ -53,49 +53,6 @@
   background-color: rgb(204,188,201);
 }
 
-.vegetable:hover{
-  background-color: rgb(249,198,200);
-}
-
-
-.fruit:hover{
-  background-color: rgb(251, 214, 187);
-}
-
-.mushroom:hover{
-  background-color: rgb(251, 248, 217);
-}
-
-.fish:hover{
-  background-color: rgb(199,244,213);
-}
-
-.processed-foods:hover{
-  background-color: rgb(187,235,255);
-}
-
-.noodle:hover{
-  background-color: rgb(205,208,241);
-}
-
-.powder:hover{
-  background-color: rgb(183,199,222);
-}
-
-.flavor:hover{
-  background-color: rgb(230,199,231);
-}
-
-.rice:hover{
-  background-color: rgb(210,210,210);
-}
-
-.meat:hover{
-  background-color: rgb(204,188,201);
-}
-
-
-
 .box1 {
   overflow: hidden;
   background-color: rgb(252, 224, 226);
