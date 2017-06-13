@@ -4,7 +4,7 @@
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/stuff.css' %}">
 <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/hanna.css">
-<form class="" action="index.html" method="post">
+<form class="" action="{% url 'search' %}" method="post">
     <div class="sort vegetable">
       <img src="{% static '/img/ing1.jpg' %}" alt="채소류" class="sub-sort">
       <div class="box1">

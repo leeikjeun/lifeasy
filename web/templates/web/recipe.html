@@ -4,8 +4,8 @@
   <link rel="stylesheet" href="{% static 'css/search_box.css' %}">
 
   <div class="search-box">
-    <form action="{% url 'recipe_result' %}" method="get">
-      {% csrf_token %}
+    <form action="{% url 'search' %}" method="post">
+
       <h3 class="recipe-title">
         레시피 검색
       </h3>
