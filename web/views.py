@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 import os
 import sys
 import urllib.request
+import json
 
 # Create your views here.
 
@@ -14,23 +15,48 @@ def mainPage(request):
 @csrf_exempt
 def SearchPage(request):
 
-    print ("재료", request.POST)
+    From_Parent = request
+
+    print ("재료", From_Parent.POST)
+
+    Search_String = ""
+
+    for row in From_Parent.POST:
+        print (From_Parent.POST[row])
+        if(Search_String == ""):
+            Search_String = From_Parent.POST[row]
+        else:
+            Search_String = "{} 과 {}".format(Search_String, From_Parent.POST[row])
+
+    print (Search_String)
+
+
 
     try:
-        client_id = "az3VR2WRt2KHh5y8sswK"
-        client_secret = "k6TRia1ymk"
-        encText = urllib.parse.quote("검색할 단어")
+        client_id = "09y9seGZ8bqyV1jcpRE9"
+        client_secret = "jGX8gseiuw"
+        encText = urllib.parse.quote(Search_String)
         url = "https://openapi.naver.com/v1/search/blog?query=" + encText
-        request = urllib.request.Request(url)
-        request.add_header("X-Naver-Client-Id",client_id)
-        request.add_header("X-Naver-Client-Secret",client_secret)
-        response = urllib.request.urlopen(request)
+
+        headers = {"X-Naver-Client-Id": client_id, "X-Naver-Client-Secret" : client_secret}
+        rqs = urllib.request.Request(url, None, headers)  # The assembled request
+
+
+        response = urllib.request.urlopen(rqs)
         rescode = response.getcode()
+        #print (response)
         if(rescode==200):
             response_body = response.read()
-            print(response_body.decode('utf-8'))
+            decoded_data = json.loads(response_body.decode('utf-8'))
+            print (decoded_data)
+            #print(response_body.decode('utf-8'))
         else:
             print("Error Code:" + rescode)
+
+        for row in decoded_data['items']:
+            print (row['link'])
+            print (row['description'])
+            print (row['title'])
     except Exception as E:
         print (E)
 
