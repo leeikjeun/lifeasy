@@ -11,94 +11,32 @@
 
   </div>
 
+
+
   <div class="search-result-list">
     <div class="page-header">
-      검색결과 : (5/24)개
+      검색결과 : {{ Total }}개
     </div>
-    <div class="list">
-      <a href="#">
-        <div class="img-box">
-          <img src="{% static 'img/testfood.jpg'%}" alt="">
-        </div>
-        <div class="result">
-          <h3 class="result-name">검색결과</h3>
-          <p class="result-text">Text - Double click to edit</p>
-        </div>
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="list">
-      <a href="#">
-        <div class="img-box">
-          <img src="{% static 'img/testfood.jpg'%}" alt="">
-        </div>
-        <div class="result">
-          <h3 class="result-name">검색결과</h3>
-          <p class="result-text">Text - Double click to edit</p>
-        </div>
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="list">
-      <a href="#">
-        <div class="img-box">
-          <img src="{% static 'img/testfood.jpg'%}" alt="">
-        </div>
-        <div class="result">
-          <h3 class="result-name">검색결과</h3>
-          <p class="result-text">Text - Double click to edit</p>
-        </div>
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="list">
-      <a href="#">
-        <div class="img-box">
-          <img src="{% static 'img/testfood.jpg'%}" alt="">
-        </div>
-        <div class="result">
-          <h3 class="result-name">검색결과</h3>
-          <p class="result-text">Text - Double click to edit</p>
-        </div>
-        <div class="clear"></div>
-      </a>
-    </div>
-    <div class="list">
-      <a href="#">
-        <div class="img-box">
-          <img src="{% static 'img/testfood.jpg'%}" alt="">
-        </div>
-        <div class="result">
-          <h3 class="result-name">검색결과</h3>
-          <p class="result-text">Text - Double click to edit</p>
-        </div>
-        <div class="clear"></div>
-      </a>
-    </div>
+    {% for row in List_String %}
+        {{ row|safe }}
+    {% endfor %}
 
 
   </div>
   <nav aria-label="Page navigation example" class="page">
     <ul class="pagination">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-          <span class="sr-only">Previous</span>
-        </a>
-      </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">4</a></li>
-          <li class="page-item"><a class="page-link" href="#">5</a></li>
-          <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-          <span class="sr-only">Next</span>
-        </a>
+      <li class="page-item"><a class="page-link" href="?page=1&Search_String={{Search_String}}">1</a></li>
+      <li class="page-item"><a class="page-link" href="?page=2&Search_String={{Search_String}}">2</a></li>
+      <li class="page-item"><a class="page-link" href="?page=3&Search_String={{Search_String}}">3</a></li>
+      <li class="page-item"><a class="page-link" href="?page=4&Search_String={{Search_String}}">4</a></li>
+      <li class="page-item"><a class="page-link" href="?page=5&Search_String={{Search_String}}">5</a></li>
+      <li class="page-item"><a class="page-link" href="?page=6&Search_String={{Search_String}}">6</a></li>
+      <li class="page-item"><a class="page-link" href="?page=7&Search_String={{Search_String}}">7</a></li>
+      <li class="page-item"><a class="page-link" href="?page=8&Search_String={{Search_String}}">8</a></li>
+      <li class="page-item"><a class="page-link" href="?page=9&Search_String={{Search_String}}">9</a></li>
+      <li class="page-item"><a class="page-link" href="?page=10&Search_String={{Search_String}}">10</a></li>
       </li>
     </ul>
   </nav>
-  {{test}}
 
 {% endblock %}

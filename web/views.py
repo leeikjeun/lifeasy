@@ -21,14 +21,38 @@ def SearchPage(request):
 
     Search_String = ""
 
-    for row in From_Parent.POST:
-        print (From_Parent.POST[row])
-        if(Search_String == ""):
-            Search_String = From_Parent.POST[row]
-        else:
-            Search_String = "{} 과 {}".format(Search_String, From_Parent.POST[row])
+    try:
+        Page = int(From_Parent.GET['page'])
+        print (Page)
+    except:
+        Page = 0
+
+    if(Page == 0 or Page == 1):
+        Start_index = 1
+    else:
+        Start_index = Page * 100
+
+    try:
+        Search_String = (From_Parent.GET['Search_String'])
+    except:
+        for row in From_Parent.POST:
+            if (row=="page"):
+                continue
+            print (From_Parent.POST[row])
+            if(Search_String == ""):
+                Search_String = From_Parent.POST[row]
+            else:
+                Search_String = "{} 과 {}".format(Search_String, From_Parent.POST[row])
+
+
 
     print (Search_String)
+
+
+
+
+
+
 
 
 
@@ -36,7 +60,7 @@ def SearchPage(request):
         client_id = "09y9seGZ8bqyV1jcpRE9"
         client_secret = "jGX8gseiuw"
         encText = urllib.parse.quote(Search_String)
-        url = "https://openapi.naver.com/v1/search/blog?query=" + encText
+        url = "https://openapi.naver.com/v1/search/blog?display=100&start={}&query=".format(Start_index) + encText
 
         headers = {"X-Naver-Client-Id": client_id, "X-Naver-Client-Secret" : client_secret}
         rqs = urllib.request.Request(url, None, headers)  # The assembled request
@@ -48,23 +72,40 @@ def SearchPage(request):
         if(rescode==200):
             response_body = response.read()
             decoded_data = json.loads(response_body.decode('utf-8'))
-            print (decoded_data)
+
+            Total = decoded_data['total']
+            #print (decoded_data)
             #print(response_body.decode('utf-8'))
         else:
-            print("Error Code:" + rescode)
+            pass
+            #print("Error Code:" + rescode)
+
+        List_String = list()
 
         for row in decoded_data['items']:
-            print (row['link'])
-            print (row['description'])
-            print (row['title'])
+            List_String.append("""<div class="list">
+  <a href="{0}">
+    <div class="img-box">
+      <img src="https://s17.postimg.org/j0qisnqfz/testfood.jpg" alt="">
+    </div>
+    <div class="result">
+      <h3 class="result-name">{1}</h3>
+      <p class="result-text">{2}</p>
+    </div>
+    <div class="clear"></div>
+  </a>
+</div>
+""".format(row['link'],row['title'],row['description']))
+
+        #print (List_String)
+
+        print ("TOTAL: {}".format(Total))
+
+
     except Exception as E:
         print (E)
 
-
-
-
-
-    return render(request, 'web/recipe_result.html', {})
+    return render(request, 'web/recipe_result.html', {'List_String':List_String,'Search_String':Search_String,'Total':Total})
 
 @csrf_exempt
 def recipePage(request):
