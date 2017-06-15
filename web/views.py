@@ -92,7 +92,6 @@ def SearchPage(request):
       <h3 class="result-name">{1}</h3>
       <p class="result-text">{2}</p>
     </div>
-    <div class="clear"></div>
   </a>
 </div>
 """.format(row['link'],row['title'],row['description']))
