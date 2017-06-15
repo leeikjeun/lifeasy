@@ -9,12 +9,22 @@
     <p class="notice">입력하신 문의사항은 관리자의 메일로 전송됩니다.</p>
   </div>
   <div class="faq-box">
-    <form class="" action="index.html" method="post">
+
       <h3>제목</h3>
       <input class="faq-title" type="text" name="faq-title" placeholder="제목을 입력해주세요.">
       <textarea class="faq-content" name="name" placeholder="내용을 입력해주세요."></textarea>
-      <input class="submit" type="submit" name="submit" value="메일보내기">
-    </form>
+      <button class="mail-submit-btn" type="button" name="button">전송하기</button>
+
   </div>
+
+  <script type="text/javascript">
+    var fake = document.querySelector(".mail-submit-btn");
+
+    fake.addEventListener("click",function(){
+      alert("전송이 완료되었습니다.");
+      location.href = "/";
+    });
+
+  </script>
 
 {% endblock %}
