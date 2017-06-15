@@ -21,6 +21,7 @@
 
 .list{
   border: 1px solid black;
+  border-radius: 5px;
   margin: 10px;
   width: 950px;
   height: 150px;
@@ -30,10 +31,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  transition: all 0.5s;
+}
+.list a:hover{
+  text-decoration: none;
+  background-color: rgb(189, 189, 189);
 }
 
 .result{
   width: 80%;
+  padding-left: 4px;
 }
 
 
@@ -43,20 +50,21 @@
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+  font-size: 19px;
 }
 
 .result-text{
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
+  line-height:normal;
 }
 
 .result-name, .result-text{
-
   font-family: 'Noto Sans KR', sans-serif;
   color: black;
-
 }
+
 
 .img-box{
   width: 20%;
@@ -70,6 +78,7 @@
   width: 100%;
   height: 100%;
   padding: 3px;
+
 }
 
 .page{
