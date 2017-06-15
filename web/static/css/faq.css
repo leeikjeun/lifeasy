@@ -54,28 +54,23 @@
 }
 
 .email-submit-box {
-  width: 100px;
+  width: 140px;
   margin-left: auto;
-}
-
-.mail-submit-btn {
-  font-size: 10px;
 }
 
 .faq-box h3, .faq-title{
   display: inline-block;
 }
 
-.submit{
+.mail-submit-btn{
   width: 107px;
   height: 41px;
-  margin-left: 84%;
   border-radius: 4px;
   border: 1px solid gray;
   background-color:white;
 }
 
-.submit:hover{
+.mail-submit-btn:hover{
   color: black;
   background-color: rgb(234, 234, 234);
 }
