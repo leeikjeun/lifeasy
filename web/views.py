@@ -83,6 +83,8 @@ def SearchPage(request):
         List_String = list()
 
         for row in decoded_data['items']:
+            if(row['description'].count('요리') == 0 and row['description'].count('음식') == 0):
+                coninue
             List_String.append("""<div class="list">
   <a href="{0}">
     <div class="img-box">
