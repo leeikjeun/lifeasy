@@ -5,8 +5,9 @@
 <link rel="stylesheet" href="{% static 'css/recipe_result.css' %}">
 
   <div class="search-box">
-    <form class="search" action="{% url 'search' %}" method="post">
-      <input type="text" name="recipe_key" class="search"><a href="#"><span class="glyphicon glyphicon-search find"></span></a>
+    <form action="{% url 'search' %}" method="post" class="search">
+      <input type="text" name="recipe_key" class="search">
+      <span class="glyphicon glyphicon-search find"></span>
     </form>
 
   </div>
